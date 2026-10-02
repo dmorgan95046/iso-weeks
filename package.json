@@ -1,0 +1,17 @@
+{
+  "name": "iso-weeks",
+  "version": "0.1.0",
+  "description": "week numbers per ISO-8601, including edge cases at year ends",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
