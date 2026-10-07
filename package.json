@@ -1,6 +1,6 @@
 {
   "name": "iso-weeks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "week numbers per ISO-8601, including edge cases at year ends",
   "type": "module",
   "main": "src/index.js",
