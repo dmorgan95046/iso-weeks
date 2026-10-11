@@ -23,3 +23,10 @@ This library resolves every boundary case through one rule: the Thursday of a we
 ## The awkward edge
 
 `new Date(2021, 0, 1)` is Friday 1 January 2021, but ISO-wise it is the last day of **2020-W53**, not 2021-W01. Any naive "Jan 1 ⇒ week 1" assumption is wrong, and that is the exact case this library exists to handle.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
